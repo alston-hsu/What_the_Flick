@@ -16,6 +16,9 @@ This web app is a game that pulls movie posters from themoviedb.org. The user mu
 choose the correct title of the movie, from 4 multiple options. Three hint clicks are available and each correct answer adds a point. The game continues until the
 user gets a movie incorrect. The game is mobile responsive as well.
 
+### Instructions
+Run with `npm run start`.
+
 ### Challenges Solved
 **Understanding Sessions:** We originally wrote our backend with many global variables.
 We knew this would have to change and that sessions were the solution, but we didn't
