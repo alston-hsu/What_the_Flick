@@ -4,13 +4,7 @@ body {
   background-attachment: fixed;
   border-radius: 10%;
 }
-@media (max-width: 1000px) {
-  body {
-    background: black;
-    margin: 5%;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   body {
     background: black;
     margin: 5%;
@@ -78,6 +72,15 @@ img {
 form {
   margin-bottom: 0em;
 }
+.display {
+  color: #EEE8AA;
+  list-style: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
+  .display {
+    display: none;
+  }
+}
 /* class fix-button gives styling back to buttons and is applied to #'s newGame,hiScores,submit/hint-button */
 .fix-button {
   background-color: #4d0000;
@@ -90,7 +93,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   .fix-button {
     display: block;
     font-size: 3rem;
@@ -112,7 +115,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #homeNewGame-button {
     display: block;
     font-size: 3rem;
@@ -135,7 +138,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #submit-button {
     display: block;
     font-size: 3rem;
@@ -145,7 +148,7 @@ form {
     text-align: center;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #submit-button {
     float: none;
   }
@@ -162,7 +165,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #hint-button {
     display: block;
     font-size: 3rem;
@@ -172,7 +175,7 @@ form {
     text-align: center;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #hint-button {
     float: none;
   }
@@ -189,7 +192,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #newGame-button {
     display: block;
     font-size: 3rem;
@@ -199,7 +202,7 @@ form {
     text-align: center;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #newGame-button {
     float: none;
   }
@@ -216,7 +219,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #highScores-button {
     display: block;
     font-size: 3rem;
@@ -226,7 +229,7 @@ form {
     text-align: center;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #highScores-button {
     float: none;
   }
@@ -243,7 +246,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #playAgain-button {
     display: block;
     font-size: 3rem;
@@ -265,7 +268,7 @@ form {
   background-color: #D4AF37;
   color: #4d0000;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   #submit-button2 {
     display: block;
     font-size: 3rem;
@@ -313,7 +316,7 @@ form {
   font-size: 2.5rem;
   color: #D4AF37;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   .ansr-choice:hover {
     font-size: 4rem;
   }
@@ -325,7 +328,7 @@ input[type="radio"]:checked + label {
   font-size: 2.5rem;
   color: #D4AF37;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   input[type="radio"]:checked + label {
     font-size: 4rem;
   }

@@ -13,7 +13,10 @@ HTML, LESS, JavaScript, Postgres, Node.js, Express, HBS Framework, and Kube Fram
 Live @ [www.whattheflick.info](http://www.whattheflick.info)
 
 ### Overview
-
+This web app is a game that pulls movie posters from themoviedb.org. The user must
+choose the correct title of the movie, from 4 multiple options. They are allowed 3
+hint clicks and gain a point for each correct answer. The game continues until the
+user gets a movie incorrect. The game is mobile responsive as well.
 
 ### Challenges Solved
 **Understanding Sessions:** We originally wrote our backend with many global variables.
@@ -34,3 +37,9 @@ using older modules and call backs, but we ended up using Axios with promises. F
 we had code dependent on multiple calls firing at once. We solved this using Axios's
 .all and .spread prototypes. Later this got depreciated when the various API calls
 got moved to different routes and one other was removed with a buggy deleted feature.
+
+### Major Contributors
+[Paul Como](https://github.com/pcomo24)
+[George Danforth](https://github.com/SpectreiiI)
+[Alston Hsu](https://github.com/alston-hsu)
+[JJ Spetseris](https://github.com/jjspetz)

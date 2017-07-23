@@ -5,13 +5,9 @@ body {
   background-attachment: fixed;
   border-radius: 10%;
 
-  @media (max-width: 1000px) {
-    background: black;
-    margin: 5%;
-  }
   @media
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi), (max-width: 768px) {
     background: black;
     margin: 5%;
 
@@ -76,6 +72,19 @@ img {
 form {
   margin-bottom: 0em;
 }
+
+// score board less
+.display {
+  color: @roffWhite;
+  list-style: none;
+
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi), (max-width: 768px) {
+    display: none;
+  }
+}
+
 /* class fix-button gives styling back to buttons and is applied to #'s newGame,hiScores,submit/hint-button */
 .fix-button {
   background-color: @rcrimson;
@@ -92,7 +101,7 @@ form {
 
   @media
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi), (max-width: 768px) {
     display: block;
     font-size: 3rem;
     padding: 25px;
@@ -114,7 +123,7 @@ form {
   .fix-button;
   @media
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi), (max-width: 768px) {
     float: none;
   }
 }
@@ -123,7 +132,7 @@ form {
   .fix-button;
   @media
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi), (max-width: 768px) {
     float: none;
   }
 }
@@ -132,7 +141,7 @@ form {
   .fix-button;
   @media
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi), (max-width: 768px) {
     float: none;
   }
 }
@@ -141,7 +150,7 @@ form {
   .fix-button;
   @media
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi), (max-width: 768px) {
     float: none;
   }
 }
@@ -192,7 +201,7 @@ form {
     color: @rgold;
     @media
     (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+    (min-resolution: 192dpi), (max-width: 768px) {
       font-size: 4rem;
     }
   }
@@ -205,12 +214,13 @@ input[type="radio"] {
     color: @rgold;
     @media
     (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+    (min-resolution: 192dpi), (max-width: 768px) {
       font-size: 4rem;
     }
   }
 }
 #hint {
+  text-align: center;
   color: @roffWhite;
   font-family: @font2;
   font-size: 2rem;
