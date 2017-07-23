@@ -69,6 +69,8 @@ class Selector {
         title: this.title[this.index],
         overviewHint: this.hint[this.index],
         choice: this.choices,
+        score: null,
+        lives: null,
     }
     this.session.index = this.index;
     return context;
